@@ -1,0 +1,168 @@
+body {
+    background-image: url("../imagens/girassolfundo.png");
+    background-repeat: no-repeat;
+    background-position: center 30px;
+    background-attachment: fixed;
+    color: #080808;
+    font-family: Verdana, sans-serif; margin:0
+}
+
+* {box-sizing: border-box}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    top: 0px;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .navbar a:hover {
+    background-color:#bcbe43;
+    color: black;
+  }
+
+  footer {
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(217, 236, 41);
+  color: white;
+  text-align: center;
+}
+footer p {
+    font-size: 9px;
+    line-height: 0.5em;
+    letter-spacing: 0.2em;
+    color: #747474;
+}
+footer a:hover{
+    text-decoration: underline
+}
+
+.logoRca {
+    background-image: url(../imagens/rca.png);
+    width: 55px;
+    height: 16px;
+    margin: 10px auto;
+    display: inline-block;
+}
+.logoRca:hover{
+    background-image: url("../imagens/rca-hover.png");
+    transition: background-image 500ms;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+   
+	 /* posiciona a 90px para a esquerda */ 
+	top: 150px;
+  background: #e7eb2e38;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #e7eb2e38;
+    position: absolute; 
+    top: 75%;
+    width: 100%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+@media screen and (max-width: 991px) {
+    body {
+        background-image: url("../imagens/fundo-mobile.png");
+        background-position: center 20px;
+        background-attachment: scroll;
+        padding-top: 450px; 
+    } 
+}
+
+@media screen and (max-width: 768px) {
+
+    .comprar a {
+        display: block;
+        max-width: 200px;
+        margin: 10px auto
+    } 
+    .linha {
+        flex-direction: column;
+    }
+    footer p {
+        line-height: normal
+    }
+
+}

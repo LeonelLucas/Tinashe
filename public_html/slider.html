@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+        <title>Tinashe</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+        <link rel="icon" href="imagens/favicon.jpg">
+    </head>
+<style>
+
+</style>
+</head>
+<body>
+    <div class="navbar" id="myNavbar">
+        <a href="#Início">Início</a>
+        <a href="#Download">Download</a>
+        <a href="#Contato">Contato</a>
+        <a href="#Sobre">Sobre</a>
+      </div>
+<div class="slideshow-container">
+
+<div class="mySlides">
+  <q>Eu acredito que às vezes são as pessoas que ninguém espera nada que fazem as coisas que ninguém consegue imaginar.</q>
+  <p class="author">- Alan Turing</p>
+</div>
+
+<div class="mySlides">
+  <q>Quem olha para fora sonha, quem olha para dentro desperta.</q>
+  <p class="author">- Carl Jung</p>
+</div>
+
+<div class="mySlides">
+  <q>Um dia, quando olhares para trás, verás que os dias mais belos foram aqueles em que lutaste.</q>
+  <p class="author">- Sigmund Freud</p>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<footer>
+    <a >
+        Girassol
+    </a>
+
+    <p>&copy; 2020 <a href="http://www.sonymusic.com" target="_blank">Girassol</a>. Todos os direitos reservados.</p>
+    <p>
+        <a href="http://www.sonymusic.com/about/feedback.php" target="_blank">Envie-nos sua opinião</a> | <a href="http://www.sonymusic.com/privacypolicy.html" target="_blank">Política de Privacidade</a> | 
+        <a href="http://www.sonymusic.com/privacy/termsandconditions.html" target="_blank">Termos e Condições</a> | 
+        <a href="http://whymusicmatters.com/" target="_blank">Por a computação aplicada é importante?</a>
+    </p>
+
+</footer>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
+
